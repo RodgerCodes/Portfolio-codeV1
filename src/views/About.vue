@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+   <Aboutsection/>
   </div>
 </template>
+
+<script>
+import Aboutsection from '../components/About_Section';
+export default {
+  name:"About",
+  components:{
+     Aboutsection
+  }
+}
+</script>

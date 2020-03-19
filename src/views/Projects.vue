@@ -1,11 +1,15 @@
 <template>
     <div>
-      <h1>This is the projects Page</h1>
+      <Projectsection/>
     </div>
 </template>
 
 <script>
+import Projectsection from '../components/Projects_section';
 export default {
-    name:'Projects'
+    name:'Projects',
+    components: {
+      Projectsection
+    }
 }
 </script>

@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-     <h1>This is the home page</h1>
+    <Homesection/>
   </div>
 </template>
 
 <script>
-
+import Homesection from '../components/home_section';
 
 export default {
   name: 'Home',
   components: {
-   
+     Homesection
   }
 }
 </script>

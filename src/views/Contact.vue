@@ -1,11 +1,15 @@
 <template>
     <div>
-        <h1>Hello from the Contact Page</h1>
+        <Contactsection/>
     </div>
 </template>
 
 <script>
+import Contactsection from '../components/Contact_section';
 export default {
-    name:'Contact'
+    name:'Contact',
+    components:{
+        Contactsection
+    }
 }
 </script>
