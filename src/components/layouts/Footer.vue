@@ -3,6 +3,7 @@
   <v-footer
     dark
     padless
+    absolute="true"
   >
     <v-card
       flat
@@ -13,13 +14,14 @@
         <v-btn
           v-for="icon in icons"
           :key="icon"
-          class="mx-4 white--text "
+          class="mx-4 white--text text-center"
           icon
         >
           <v-icon size="24px" color="#fff">{{ icon }}</v-icon>
         </v-btn>
       </v-card-text>
     </v-card>
+    <p class="text">All rights reserved</p>
   </v-footer>
 </template>
 
@@ -37,6 +39,15 @@
         'fab fa-linkedin',
         'fab fa-instagram',
       ],
+      links:[
+        ''
+      ]
     }),
   }
 </script>
+
+<style scoped>
+ .text {
+   text-align:center;
+ }
+</style>

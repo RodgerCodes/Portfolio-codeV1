@@ -18,6 +18,7 @@
       <v-btn elevation="0.0" to="/about">About Me</v-btn>
       <v-btn elevation="0.0" to="/projects" >Projects</v-btn>
       <v-btn elevation="0.0" to="/contact">Contact</v-btn>
+      <v-btn elevation="0.0" to="/books">Books</v-btn>
     </v-toolbar>
   </v-card>
 </template>
