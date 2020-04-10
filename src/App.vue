@@ -26,7 +26,7 @@ html {
   transition:all 0.5s;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -131,6 +131,16 @@ body {
    }
 }
 
+@media Screen and (max-width:500px){
+    .project-1, .project-2, .project-3, .project-4 {
+      width: 350px !important;
+    }
+
+    .project-info a  {
+      margin: 0 !important;
+    }
+}
+
 @media Screen and (max-width:400px) {
    .content h1 {
      font-size:25px !important;
@@ -142,7 +152,7 @@ body {
 
     .project {
       top: 28rem;
-      left: 2.4%;
+      left: 2.4% !important;
     }
 
     .project-1 img {
@@ -166,6 +176,10 @@ body {
        top: 64rem;
       left: -18%;
        
+     }
+
+     .project-1, .project-2, .project-3, .project-4 {
+       width: 300px !important;
      }
 }
 </style>

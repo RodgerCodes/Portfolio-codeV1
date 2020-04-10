@@ -19,7 +19,7 @@
            <div class="project-info">
              <p>A mobile app that Tracks bitcon prices🤑</p>
              <div>
-                <router-link to=""><i class="fab fa-chrome" color="#000"></i>View Site</router-link>
+                <!-- <router-link to=""><i class="fab fa-chrome" color="#000"></i>View Site</router-link> -->
                 <router-link to=""><i class="fab fa-github" color="#000"></i>View Code</router-link>
              </div>
            </div>
@@ -41,7 +41,7 @@
            <div class="project-info">
              <p>A mobile App containing various recipes😋</p>
              <div>
-                <router-link to=""><i class="fab fa-chrome" color="#000"></i>View Site</router-link>
+                <!-- <router-link to=""><i class="fab fa-chrome" color="#000"></i>View Site</router-link> -->
                 <router-link to=""><i class="fab fa-github" color="#000"></i>view Code</router-link>
              </div>
            </div>
