@@ -8,8 +8,8 @@
            <div class="project-info">
              <p>Web app that displays Covid-19 stats😷</p>
              <div>
-                <router-link to=""><i class="fab fa-chrome" color="#000"></i>View Site</router-link>
-                <router-link to=""><i class="fab fa-github" color="#000"></i>View Code</router-link>
+                <router-link to=""><i class="fab fa-chrome" color="#000"></i>view</router-link>
+                <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div> 
@@ -30,8 +30,8 @@
            <div class="project-info">
              <p>Web app that displays Covid-19 stats</p>
              <div>
-                <router-link to=""><i class="fab fa-chrome" color="#000"></i>View Site</router-link>
-                <router-link to=""><i class="fab fa-github" color="#000"></i>View Code</router-link>
+                <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-chrome" color="#000"></i>view</a>
+                <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -65,6 +65,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     justify-content: space-evenly;
+    z-index: 1 !important;
     
 }
  .project h1 {

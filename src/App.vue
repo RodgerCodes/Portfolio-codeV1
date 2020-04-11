@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <Header/>
     
     <router-view/>
@@ -26,7 +26,7 @@ html {
   transition:all 0.5s;
 }
 body {
-  overflow: hidden !important;
+  overflow-x: hidden;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -46,7 +46,7 @@ body {
     }
 
     .about-info .extra-info h3 {
-      top:12% !important;
+      top:20% !important;
     }
 
      .project-1, .project-2, .project-3, .project-4{
@@ -169,17 +169,16 @@ body {
 
      .contact-info{
        top: 64rem;
-       margin: 50px 0;
+       margin: 70px 0;
      }
 
      .icons {
-       top: 64rem;
-      left: -18%;
-       
+       top: 61rem !;       
      }
 
      .project-1, .project-2, .project-3, .project-4 {
        width: 300px !important;
+       margin: 0 20px;
      }
 }
 </style>

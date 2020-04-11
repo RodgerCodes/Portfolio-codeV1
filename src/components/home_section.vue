@@ -1,5 +1,6 @@
 <template>
 <div class="container items">
+    
     <div class="content">
       <h1>Hello 😊,</h1>
        <h1>My name is <Strong class="name">Rodger</Strong></h1>
@@ -13,14 +14,20 @@
 </template>
 
 <script>
-
+import '../App';
 export default {
     name:"Homesection",
+    
     
 }
 </script>
 
 <style >
+.dark-btn {
+    position: absolute;
+    top:5%;
+    right: 20px;
+}
  body{
      position: relative;
  }

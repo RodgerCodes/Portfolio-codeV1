@@ -15,11 +15,11 @@
       ><router-link to="/"></router-link></v-img>
      
       <v-spacer></v-spacer>  
-      <div class="links">
-        <router-link to="/" @click="closesidebar">Home</router-link>
-       <router-link to="/#about" @click="closesidebar">About</router-link>
-       <router-link to="/#project" @click="closesidebar">Projects</router-link>
-       <router-link to="/#contact" @click="closesidebar">Contact</router-link>
+      <div class="links" id="links">
+        <router-link to="/" >Home</router-link>
+       <router-link to="/#about">About</router-link>
+       <router-link to="/#project" >Projects</router-link>
+       <router-link to="/#contact" >Contact</router-link>
         </div>   
         <div class="svg">
           <a href="#" @click="opensidebar">
@@ -31,10 +31,10 @@
        </a>
        <div id="side-menu" class="side-nav">
          <a href="#" class="btn-close" @click="closesidebar">&times;</a>
-         <router-link to="/">Home</router-link>
-       <router-link to="/#about" >About</router-link>
-       <router-link to="/#project">Projects</router-link>
-       <router-link to="/#contact">Contact</router-link>
+         <router-link to="/" @click="closesidebar"><a @click="closesidebar">Home</a></router-link>
+       <router-link to="/#about" ><a @click="closesidebar">About</a></router-link>
+       <router-link to="/#project"><a @click="closesidebar">Projects</a></router-link>
+       <router-link to="/#contact" class="contact-btn"><a @click="closesidebar">Contact</a></router-link>
        </div>
           </div> 
        
@@ -46,7 +46,7 @@
     name: 'Header',
     methods:{
       opensidebar(){
-        document.getElementById('side-menu').style.width = '220px';
+        document.getElementById('side-menu').style.width = '210px';
       },
       closesidebar() {
         document.getElementById('side-menu').style.width = '0';
@@ -56,6 +56,9 @@
 </script>
 
 <style >
+.contact-btn a{
+  padding: 10px 10px 5px 30px;
+}
  .links {
     display: flex;
  }
@@ -70,7 +73,7 @@
  }
 
  .side-nav {
-   height: 900vh;
+   height: 100vh;
    width: 0;
    position: fixed;
    top: 0;
@@ -80,10 +83,12 @@
    overflow-x: hidden;
    padding: 60px 0 0 0;
    transition: 0.5s;
+   z-index: 9 !important;
+   
  }
 
  .side-nav a {
-   padding: 10px 10px 10px 30px;
+   padding: 5px 10px 5px 30px;
    text-decoration: none;
    font-size: 20px;
    color: #ccc;
