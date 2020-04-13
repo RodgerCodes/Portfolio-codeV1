@@ -47,6 +47,7 @@
     methods:{
       opensidebar(){
         document.getElementById('side-menu').style.width = '210px';
+        document.querySelector('.side-nav').style.zIndex = '100 !important';
       },
       closesidebar() {
         document.getElementById('side-menu').style.width = '0';
@@ -83,7 +84,7 @@
    overflow-x: hidden;
    padding: 60px 0 0 0;
    transition: 0.5s;
-   z-index: 9 !important;
+   z-index: 100 !important;
    
  }
 

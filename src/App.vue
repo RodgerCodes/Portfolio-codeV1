@@ -40,6 +40,7 @@ body {
       font-size: 20px;
     }
 
+    
     .image {
       width: 25rem;
       margin: 20px 20px;
@@ -55,6 +56,49 @@ body {
      }
 }
  
+ /* ipad pro display */
+@media Screen and (max-width:1050px){
+
+     .items {
+       height: 100vh !important;
+     }
+
+     .about {
+       height: 100vh !important;
+     }
+
+     .project {
+       height: 100vh !important;
+     }
+
+     .contact-info {
+      height: 100vh !important;
+      margin: 10% 0;
+     }
+
+     .info {
+       top: 40% !important;
+     }
+}  
+
+@media screen and (height:1366px){
+  .items {
+     height: 50vh !important;
+  }
+
+  .about {
+    height: 50vh !important;
+  }
+
+  .project {
+    height: 50vh !important;
+  }
+
+  .info {
+    top: 20% !important;
+  }
+}
+
 @media Screen and (max-width:1000px ){
   .svg {
     display: block;
@@ -90,25 +134,37 @@ body {
   
 }
 
-@media Screen and (max-width:700px){
+@media Screen and (max-width:780px){
+  .items {
+    height: 100vh !important;
+  }
+  .about {
+    height: 100vh !important;
+  }
+  
+  .project {
+    height: 100vh !important;
+    margin: 20px 0;
+  }
+
   .about-info .extra-info h3 {
-    top:90% !important;
+    top:28rem !important;
     margin: 30px;
   }
   .project {
     position: relative;
-    top: 20rem;
+    top: 22rem;
     align-items: center;
     margin: 40px 0  0 0 ;
   }
 
   .project-1, .project-2, .project-3, .project-4 {
-    width: 300px !important;
+    width: 400px !important;
     margin: 10px 10px 5px 10px !important;
   }
 
   .contact-info {
-     top: 56rem;
+     top: 58rem;
   }
 
    .icons{
@@ -173,7 +229,7 @@ body {
      }
 
      .icons {
-       top: 61rem !;       
+       top: 61rem !important;       
      }
 
      .project-1, .project-2, .project-3, .project-4 {

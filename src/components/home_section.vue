@@ -5,7 +5,7 @@
       <h1>Hello 😊,</h1>
        <h1>My name is <Strong class="name">Rodger</Strong></h1>
      <h2 style="font-size=30px">A fullstack web developer</h2>
-     <router-link to="/#about" class="link">About me</router-link>
+     <router-link to="/#about" class="link"><a @click="closesidebar">About me</a></router-link>
     </div>
    <div >
       <img class ="image" src ="../assets/program.jpg" width="600rem"/>      
@@ -15,8 +15,14 @@
 
 <script>
 import '../App';
+import  './layouts/Header';
 export default {
     name:"Homesection",
+    methods:{
+       closesidebar() {
+        document.getElementById('side-menu').style.width = '0';
+      }
+    }
     
     
 }
