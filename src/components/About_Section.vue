@@ -38,7 +38,9 @@ export default {
 }
 
 .about-info img {
-    margin: 0px 10px !important; 
+    margin: 60px 10px !important; 
+    border:2px yellow solid;
+    border-radius: 50%;
 }
 
 .about-info .extra-info h3{

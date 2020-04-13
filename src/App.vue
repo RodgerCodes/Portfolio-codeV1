@@ -79,6 +79,10 @@ body {
      .info {
        top: 40% !important;
      }
+
+     .about-info img {
+       top: 50% !important;
+     }
 }  
 
 @media screen and (height:1366px){
@@ -175,7 +179,7 @@ body {
      margin:0px 5px !important;
      position: absolute;
      left: 50%;
-     top: 5%;
+     top: 20%;
      transform: translateX(-50%);
    }
 
@@ -185,6 +189,7 @@ body {
 
    .info > div h3 {
      font-size: 22px !important;
+
    }
 }
 
@@ -207,6 +212,10 @@ body {
      top:6.2rem !important;
    }
    
+   .about-info .extra-info h3 {
+     top: 23rem !important;
+     text-align: center;
+   }
 
    .content a {
      font-size: 16px !important;
@@ -214,7 +223,7 @@ body {
    }
 
     .project {
-      top: 28rem;
+      top: 23rem ;
       left: 2.4% !important;
       height: 100vh !important;
     }
@@ -232,12 +241,12 @@ body {
       }
 
      .contact-info{
-       top: 63rem;
+       top: 55rem;
        margin: 70px 0;
      }
 
      .icons {
-       top: 61rem !important;       
+       top: 50rem !important;       
      }
 
      .project-1, .project-2, .project-3, .project-4 {
