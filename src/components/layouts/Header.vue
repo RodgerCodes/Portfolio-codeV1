@@ -24,9 +24,9 @@
         <div class="svg">
           <a href="#" @click="opensidebar">
            <svg width="30" height="30">
-         <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-         <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-         <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+         <path d="M0,5 30,5" stroke="#000" stroke-width="4" />
+         <path d="M0,14 23,14" stroke="#000" stroke-width="4" />
+         <path d="M0,23 30,23" stroke="#000" stroke-width="4" />
        </svg>
        </a>
        <div id="side-menu" class="side-nav">
@@ -46,7 +46,7 @@
     name: 'Header',
     methods:{
       opensidebar(){
-        document.getElementById('side-menu').style.width = '210px';
+        document.getElementById('side-menu').style.width = '180px';
         document.querySelector('.side-nav').style.zIndex = '100 !important';
       },
       closesidebar() {
@@ -104,7 +104,7 @@
   .side-nav .btn-close {
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 10px;
     font-size: 36px;
     margin-right: 50px;
   }

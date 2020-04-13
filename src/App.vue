@@ -172,9 +172,10 @@ body {
    }
 
    .about-info img {
-     margin: 30px 5px;
+     margin:0px 5px !important;
      position: absolute;
      left: 50%;
+     top: 5%;
      transform: translateX(-50%);
    }
 
@@ -205,10 +206,17 @@ body {
    .link{
      top:6.2rem !important;
    }
+   
+
+   .content a {
+     font-size: 16px !important;
+     padding: 10px 5px !important;
+   }
 
     .project {
       top: 28rem;
       left: 2.4% !important;
+      height: 100vh !important;
     }
 
     .project-1 img {
@@ -224,7 +232,7 @@ body {
       }
 
      .contact-info{
-       top: 64rem;
+       top: 63rem;
        margin: 70px 0;
      }
 

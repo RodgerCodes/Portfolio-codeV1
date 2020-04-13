@@ -2,7 +2,7 @@
     <div ref="about" id="about" class="container about">
        <h1>About Me</h1>
        <div class="about-info">
-          <img src="../assets/rodger.jpg" class="haha" alt="Rodger Photo" width="200rem">
+          <img src="../assets/rodger.png" class="haha" alt="Rodger Photo" width="250rem">
           <div class="extra-info">
              <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aut, optio aliquam nisi accusamus tempore placeat deleniti velit fugit architecto dolore quidem vel soluta sunt nostrum eius ab officiis nulla eos? Sunt accusantium in, ea totam minima ducimus minus quia neque repudiandae saepe modi id sit libero dolor perferendis rem nostrum commodi quod eos praesentium voluptate. Consequuntur voluptate tempore incidunt odit veritatis excepturi ad asperiores, sint debitis recusandae. Nemo hic ut soluta sapiente neque debitis porro tempora,</h3>
           </div>
@@ -38,7 +38,7 @@ export default {
 }
 
 .about-info img {
-    margin: 50px 10px; 
+    margin: 0px 10px !important; 
 }
 
 .about-info .extra-info h3{
