@@ -81,7 +81,7 @@ body {
      }
 
      .about-info img {
-       top: 50% !important;
+       top: 20% !important;
      }
 }  
 
@@ -212,6 +212,10 @@ body {
      top:6.2rem !important;
    }
    
+   .about-info img {
+     top: 10% !important;
+   }
+
    .about-info .extra-info h3 {
      top: 23rem !important;
      text-align: center;
