@@ -8,7 +8,7 @@
            <div class="project-info">
              <p>Web app that displays Covid-19 stats😷</p>
              <div>
-                <router-link to=""><i class="fab fa-chrome" color="#000"></i>view</router-link>
+                <a target="_blank" href="https://covidfy.netlify.app/"><i class="fab fa-chrome" color="#000"></i>view</a>
                 <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
@@ -24,10 +24,10 @@
            </div>
         </div>
         <div class="project-3">
-          <h2>Earth</h2>
-           <img src="" alt="Project image">
+          <h2>Movie Library</h2>
+           <img src="../assets/unnamed.jpg" alt="Project image">
            <div class="project-info">
-             <p>Web app that displays Covid-19 stats</p>
+             <p>A web app that displays information about the latest movies and series</p>
              <div>
                 <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-chrome" color="#000"></i>view</a>
                 <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
@@ -93,7 +93,7 @@ export default {
      margin: 10px 0;
  }
 
-.project-1 img {
+.project-1 img, .project-3 img {
    width: 128px;
    height: 128px;
     margin: 10px 130px;
