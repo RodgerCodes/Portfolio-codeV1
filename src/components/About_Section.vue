@@ -26,10 +26,6 @@ export default {
    margin: 0 0 20px 0;
 }
 
-.haha {
-    z-index: 3;
-}
-
 .about-info {
     display: grid;
     justify-content: space-evenly;
@@ -41,7 +37,8 @@ export default {
     margin: 60px 10px !important; 
     border:2px yellow solid;
     border-radius: 50%;
-}
+} 
+   
 
 .about-info .extra-info h3{
   position: absolute;

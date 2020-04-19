@@ -27,7 +27,7 @@
           <h2>Movie Library</h2>
            <img src="../assets/unnamed.jpg" alt="Project image">
            <div class="project-info">
-             <p>A web app that displays information about the latest movies and series</p>
+             <p>A web app for information about the latest movies and series</p>
              <div>
                 <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-chrome" color="#000"></i>view</a>
                 <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
@@ -38,9 +38,10 @@
           <h2>Recipe App</h2>
            <img src="" alt="Project image">
            <div class="project-info">
-             <p>A mobile App containing various recipes😋</p>
+             <p>A Fullstack web app</p>
              <div>
-                <router-link to=""><i class="fab fa-github" color="#000"></i>Code</router-link>
+               <a to=""><i class="fab fa-chrome" color="#000"></i>Visit</a>
+                <a to=""><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -93,10 +94,16 @@ export default {
      margin: 10px 0;
  }
 
-.project-1 img, .project-3 img {
+.project-1 img {
    width: 128px;
    height: 128px;
     margin: 10px 130px;
+ }
+
+ .project-3 img  {
+    width: 128px;
+   height: 128px;
+   margin: 5px 130px;
  }
 
  .project-2 img {
