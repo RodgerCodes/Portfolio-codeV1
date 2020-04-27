@@ -24,9 +24,9 @@
         <div class="svg">
           <a href="#" @click="opensidebar">
            <svg width="30" height="30">
-         <path d="M0,5 30,5" stroke="#000" stroke-width="4" />
-         <path d="M0,14 23,14" stroke="#000" stroke-width="4" />
-         <path d="M0,23 30,23" stroke="#000" stroke-width="4" />
+         <path d="M0,5 25,5" stroke="#000" stroke-width="4" />
+         <path d="M0,14 20,14" stroke="#000" stroke-width="4" />
+         <path d="M0,23 40,23" stroke="#000" stroke-width="4" />
        </svg>
        </a>
        <div id="side-menu" class="side-nav">
