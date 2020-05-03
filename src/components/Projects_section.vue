@@ -35,13 +35,13 @@
            </div>
         </div>
            <div class="project-4">
-          <h2>Recipe App</h2>
-           <img src="" alt="Project image">
+          <h2>Thoughts 101</h2>
+           <img src="../assets/images.png" alt="Project image">
            <div class="project-info">
              <p>A Fullstack web app</p>
              <div>
-               <a to=""><i class="fab fa-chrome" color="#000"></i>Visit</a>
-                <a to=""><i class="fab fa-github" color="#000"></i>Code</a>
+               <a target="_blank" href="https://stormy-springs-87821.herokuapp.com/"><i class="fab fa-chrome" color="#000"></i>Visit</a>
+                <a target="_blank" href="https://github.com/RodgerCodes/Thoughts-101"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -104,6 +104,12 @@ export default {
     width: 128px;
    height: 128px;
    margin: 5px 130px;
+ }
+
+ .project-4 img {
+   width:128px;
+   height: 128px;
+   margin: 10px 130px;
  }
 
  .project-2 img {
