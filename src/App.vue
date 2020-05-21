@@ -16,7 +16,7 @@ export default {
   name:'App',
   components: {
      Header,
-  }
+  },
 }
 </script>
 
@@ -27,6 +27,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  /* background-color: #1e1e1e; */
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -46,7 +47,7 @@ body {
       margin: 20px 20px;
     }
 
-    .about-info .extra-info h3 {
+    .about-info .extra-info h2 {
       top:20% !important;
     }
 
@@ -151,7 +152,7 @@ body {
     margin: 20px 0;
   }
 
-  .about-info .extra-info h3 {
+  .about-info .extra-info h2 {
     top:28rem !important;
     margin: 30px;
   }
@@ -187,7 +188,7 @@ body {
      margin: 10px 0;
    }
 
-   .info > div h3 {
+   .info > div h2 {
      font-size: 22px !important;
 
    }
@@ -216,7 +217,7 @@ body {
      top: 10% !important;
    }
 
-   .about-info .extra-info h3 {
+   .about-info .extra-info h2 {
      top: 23rem !important;
      text-align: center;
    }

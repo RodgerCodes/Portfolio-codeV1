@@ -1,15 +1,14 @@
 <template>
-    <div id="project" class="container project">
+    <div data-aos="fade-right" id="project" class="container project">
         <h1>My Projects</h1>
         <div class=" projects">
-          <div class="project-1">
-            <h2>Covid-19</h2>
+          <div class="project-1 card">
+            <h2>Covidfy</h2>
            <img src="../assets/covid.png" alt="Project image">
            <div class="project-info">
-             <p>Web app that displays Covid-19 stats😷</p>
+             <p>A mobile app for covid-19😷</p>
              <div>
-                <a target="_blank" href="https://covidfy.netlify.app/"><i class="fab fa-chrome" color="#000"></i>view</a>
-                <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
+                <a target="_blank" href="https://github.com/RodgerCodes/Covidfy"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div> 
@@ -23,7 +22,7 @@
              </div>
            </div>
         </div>
-        <div class="project-3">
+        <div class="project-3 card">
           <h2>Movie Library</h2>
            <img src="../assets/unnamed.jpg" alt="Project image">
            <div class="project-info">
@@ -34,7 +33,7 @@
              </div>
            </div>
         </div>
-           <div class="project-4">
+           <div class="project-4 card">
           <h2>Thoughts 101</h2>
            <img src="../assets/images.png" alt="Project image">
            <div class="project-info">
@@ -64,12 +63,13 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     justify-content: space-evenly;
-    z-index: 1 !important;
+    cursor: pointer;
     
 }
  .project h1 {
      text-align: center;
      margin: 0 0 20px 0;
+     color: #000;
  }
 
  
@@ -77,15 +77,16 @@ export default {
      width: 400px;
      height: 250px;
      background: #fff;
-     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.712), 0px 0px 5px rgba(0, 0, 0, 0.664);
+     box-shadow: 2px 2px 10px #1a191993, 2px 2px 10px #1a191993;
      position: relative;
      margin: 15px 0;
      align-content: center;
      left: 2rem;
+     transition: all 0.5s ease;
  }
 
 .project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover {
-    transform: scale(1.008);
+    transform: scale(1.018);
 }
   
 

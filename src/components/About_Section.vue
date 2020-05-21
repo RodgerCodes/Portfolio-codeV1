@@ -1,29 +1,38 @@
 <template>
-    <div ref="about" id="about" class="container about">
+    <div   id="about" class="container about" data-aos="fade-left">
        <h1>About Me</h1>
        <div class="about-info">
-          <img src="../assets/rodger.png" class="haha" alt="Rodger Photo" width="250rem">
+       <img src="../assets/rodger.png" class="haha" alt="Rodger Photo" width="250rem">
           <div class="extra-info">
-             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aut, optio aliquam nisi accusamus tempore placeat deleniti velit fugit architecto dolore quidem vel soluta sunt nostrum eius ab officiis nulla eos? Sunt accusantium in, ea totam minima ducimus minus quia neque repudiandae saepe modi id sit libero dolor perferendis rem nostrum commodi quod eos praesentium voluptate. Consequuntur voluptate tempore incidunt odit veritatis excepturi ad asperiores, sint debitis recusandae. Nemo hic ut soluta sapiente neque debitis porro tempora,</h3>
+             <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aut, optio aliquam nisi accusamus tempore placeat deleniti velit fugit architecto dolore quidem vel soluta sunt nostrum eius ab officiis nulla eos? Sunt accusantium in, ea totam minima ducimus minus quia neque repudiandae saepe modi id sit libero dolor perferendis rem nostrum commodi quod eos praesentium voluptate. Consequuntur voluptate tempore incidunt odit veritatis excepturi ad asperiores, sint debitis recusandae. Nemo hic ut soluta sapiente neque debitis porro tempora,</h2>
           </div>
        </div>
+       <TechStack/>
     </div>
 </template>
 
 <script>
+import TechStack from '@/components/TechStack'
 export default {
-    name:"Aboutsection"
+    name:"Aboutsection",
+    components:{
+        TechStack
+    }
 }
 </script>
 
 <style>
+
 .about {
-    height: 100vh;
+    height: 100vh !important;
     position: relative;
+    
 }
+
 .about h1 {
    text-align: center;
    margin: 0 0 20px 0;
+   
 }
 
 .about-info {
@@ -40,10 +49,9 @@ export default {
 } 
    
 
-.about-info .extra-info h3{
+.about-info .extra-info h2{
   position: absolute;
   top: 25%;
-
+ font-size: 18px;
 }
-
 </style>

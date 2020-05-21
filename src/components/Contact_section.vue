@@ -1,15 +1,15 @@
 <template>
-    <div id="contact" class="container contact-info">
+    <div data-aos="fade-left" id="contact" class="container contact-info">
         <h1>Contact info</h1>
         <div class="info">
         <div>
-           <h3>Phone Numbers</h3>
+           <h2>Phone Numbers</h2>
            <p>+265 880 122 611</p>
            <p>+265 992 424 839</p>
-        </div>
+        </div>  
         <div>
-          <h3>Email address</h3>
-          <div class="emails">
+          <h2>Email address</h2>
+          <div class="emails">  
         <a href="mailto:rkumwanje@gmail.com">rkumwanje@gmail.com</a>
         <a href="mailto:rkumwanje@hec.ac.mw">rkumwanje@hec.ac.mw</a>
          </div>
@@ -30,7 +30,7 @@ export default {
 
 <style>
 .contact-info {
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -45,7 +45,7 @@ export default {
   margin: 50px 0;
 } 
 
-.info > div h3 {
+.info > div h2 {
     font-size: 30px;
     margin: 10px 0;
 }

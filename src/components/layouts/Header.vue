@@ -5,6 +5,7 @@
     height="200px"
     tile
     class="header-main"
+    
   >
     <v-toolbar class="header" >
       <v-img
@@ -79,7 +80,7 @@
    position: fixed;
    top: 0;
    right: 0;
-   background: #111;
+   background: #000;
    opacity: 0.9;
    overflow-x: hidden;
    padding: 60px 0 0 0;
@@ -92,14 +93,11 @@
    padding: 5px 10px 5px 30px;
    text-decoration: none;
    font-size: 20px;
-   color: #ccc;
+   color: #fff;
    display: block;
    transition: 0.3s;
  }
 
-  .side-nav a:hover {
-    color: #fff;
-  }
 
   .side-nav .btn-close {
     position: absolute;

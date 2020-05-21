@@ -1,7 +1,7 @@
 <template>
   <div>
     <Homesection/>
-    <Aboutsection/>
+    <Aboutsection />
     <Projectsection/>
     <Contactsection/>
     <Footer/>
