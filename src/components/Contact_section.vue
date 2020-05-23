@@ -48,6 +48,7 @@ export default {
 .info > div h2 {
     font-size: 30px;
     margin: 10px 0;
+    
 }
 
 .info .emails {

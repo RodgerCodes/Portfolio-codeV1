@@ -23,17 +23,16 @@ export default {
 <style>
 html {
   scroll-behavior:smooth;
-  transition:all 0.5s;
+  transition:all 1s ease;
 }
 body {
-  overflow-x: hidden;
-  /* background-color: #1e1e1e; */
+  overflow: hidden;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #000000;
 }
 
 @media Screen and (max-width:1300px){
@@ -90,9 +89,16 @@ body {
   .items {
      height: 50vh !important;
   }
+  .tech{
+    margin: 10% 0 0 0 ;
+  }
 
-  .about {
-    height: 50vh !important;
+  .about-info .extra-info h2{
+    top: 10% !important;
+  }
+
+  #about {
+    height: 60vh !important;
   }
 
   .project {
@@ -113,6 +119,14 @@ body {
     display: none;
     pointer-events: none;
   }
+
+  .stack {
+    margin: 80px 0;
+  }
+  .project {
+   height: 100vh;
+   margin: 5rem 0;
+  }
 }
 
 @media Screen and (max-width:900px) {
@@ -126,10 +140,13 @@ body {
    top: 2rem !important;
   }
   
-  .contact-info {
-    position: relative;
-    top: 40rem;
-    height: 100vh !important;
+  .contact-info{
+    top:30rem ;
+    height: 150vh !important;
+  }
+
+  .info{
+    top: 30% !important;
   }
   
   .icons {
@@ -141,7 +158,7 @@ body {
 
 @media Screen and (max-width:780px){
   .items {
-    height: 100vh !important;
+    height: 70vh !important;
   }
   .about {
     height: 100vh !important;
@@ -156,21 +173,37 @@ body {
     top:28rem !important;
     margin: 30px;
   }
+
+  .tech {
+    position: absolute;
+    top: 120% !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .stack{
+    margin: 10px 0;
+
+  }
+
+  .stack > div {
+    margin: 0 10px;
+  }
+
   .project {
     position: relative;
+    height: 200vh !important;
     top: 22rem;
     align-items: center;
     margin: 40px 0  0 0 ;
   }
 
   .project-1, .project-2, .project-3, .project-4 {
-    width: 400px !important;
-    margin: 10px 10px 5px 10px !important;
+    width: 400px ;
+    margin: 10px 10px 5px 10px;
   }
 
-  .contact-info {
-     top: 58rem;
-  }
+
 
    .icons{
      top:53.5rem;
@@ -184,14 +217,30 @@ body {
      transform: translateX(-50%);
    }
 
-   .info {
-     margin: 10px 0;
+   .contact-info{
+     top: 20rem;
    }
 
-   .info > div h2 {
-     font-size: 22px !important;
+}
 
-   }
+@media Screen and (max-width:600px){
+  .stack {
+      display:grid  !important;
+      grid-template-columns: repeat(2, 1fr) ;
+    }
+
+  .project{
+    top: 35rem;
+  }
+
+  .contact-info{
+    top: 30rem;
+  }
+
+  .info{
+    top: 23% !important;
+  }
+
 }
 
 @media Screen and (max-width:500px){
@@ -201,6 +250,10 @@ body {
 
     .project-info a  {
       margin: 0 !important;
+    }
+
+    .tech{
+      top: 120%;
     }
 }
 
@@ -217,6 +270,10 @@ body {
      top: 10% !important;
    }
 
+   .tech{
+     top: 130% !important;
+   }
+
    .about-info .extra-info h2 {
      top: 23rem !important;
      text-align: center;
@@ -228,9 +285,9 @@ body {
    }
 
     .project {
-      top: 23rem ;
-      left: 2.4% !important;
-      height: 100vh !important;
+      top: 40rem ;
+      left: 5% !important;
+      height: 200vh !important;
     }
 
     .project-1 img {
@@ -246,8 +303,12 @@ body {
       }
 
      .contact-info{
-       top: 55rem;
-       margin: 70px 0;
+       top: 35rem;
+       height:200vh !important;
+     }
+
+     .info {
+       top: 25% !important; 
      }
 
      .icons {

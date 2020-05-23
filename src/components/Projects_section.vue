@@ -13,10 +13,10 @@
            </div>
         </div> 
         <div class="project-2">
-          <h2>BTC Tracker</h2>
-           <img src="../assets/icon.png" alt="Project image">
+          <h2>Facebook clone</h2>
+           <img :src="facebook" alt="Project image">
            <div class="project-info">
-             <p>A mobile app that Tracks bitcon prices🤑</p>
+             <p>Facebook clone built with Node, Vue and MongoDB</p>
              <div>
                 <router-link to=""><i class="fab fa-github" color="#000"></i>Code</router-link>
              </div>
@@ -51,7 +51,12 @@
 
 <script>
 export default {
-    name:"Projectsection"
+    name:"Projectsection",
+    data(){
+      return{
+        facebook:require('../assets/fb_icon.png')
+      }
+    }
 }
 </script>
 
@@ -75,9 +80,10 @@ export default {
  
  .project-1, .project-2, .project-3, .project-4{
      width: 400px;
-     height: 250px;
+     height: 260px;
      background: #fff;
-     box-shadow: 2px 2px 10px #1a191993, 2px 2px 10px #1a191993;
+     /* box-shadow: 2px 2px 10px #1a191993, 2px 2px 10px #1a191993; */
+     box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);
      position: relative;
      margin: 15px 0;
      align-content: center;
@@ -114,6 +120,8 @@ export default {
  }
 
  .project-2 img {
+   width: 128px;
+   height: 128px;
    margin: 10px 130px;
  }
 

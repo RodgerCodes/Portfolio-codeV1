@@ -2,9 +2,9 @@
     <div   id="about" class="container about" data-aos="fade-left">
        <h1>About Me</h1>
        <div class="about-info">
-       <img src="../assets/rodger.png" class="haha" alt="Rodger Photo" width="250rem">
+       <img :src="image"  alt="Rodger Photo" width="250rem">
           <div class="extra-info">
-             <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aut, optio aliquam nisi accusamus tempore placeat deleniti velit fugit architecto dolore quidem vel soluta sunt nostrum eius ab officiis nulla eos? Sunt accusantium in, ea totam minima ducimus minus quia neque repudiandae saepe modi id sit libero dolor perferendis rem nostrum commodi quod eos praesentium voluptate. Consequuntur voluptate tempore incidunt odit veritatis excepturi ad asperiores, sint debitis recusandae. Nemo hic ut soluta sapiente neque debitis porro tempora,</h2>
+             <h2>My Name is Rodger Kumwanje and i am a 19 year old Full stack developer with 1 year experience building web apps with Technologies like Nodejs, Vuejs ,Html5, CSS3 and Vanilla JavaScript, MongoDB, MySQL and Postgres. With the techstack you can only guess it, my favourite Programming language is JavaScript.I am also a Student at the Malawi University of Science and Technology <a href="">Must</a> Pursuing a degree in Meteorology and Climate Science</h2>
           </div>
        </div>
        <TechStack/>
@@ -17,6 +17,11 @@ export default {
     name:"Aboutsection",
     components:{
         TechStack
+    },
+    data(){
+        return {
+            image:require('../assets/rodger.png')
+        }
     }
 }
 </script>
@@ -53,5 +58,6 @@ export default {
   position: absolute;
   top: 25%;
  font-size: 18px;
+ color: rgb(49, 49, 49);
 }
 </style>
