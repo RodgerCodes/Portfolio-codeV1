@@ -32,7 +32,7 @@ body {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000000;
+  color: #4d4d4d;
 }
 
 @media Screen and (max-width:1300px){

@@ -50,6 +50,7 @@ export default {
 
 .tech h3{
     text-align: center;
+    color: #646464 ;
 }
 
 .stack > div h4 {

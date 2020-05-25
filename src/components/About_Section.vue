@@ -37,7 +37,6 @@ export default {
 .about h1 {
    text-align: center;
    margin: 0 0 20px 0;
-   
 }
 
 .about-info {
@@ -58,6 +57,6 @@ export default {
   position: absolute;
   top: 25%;
  font-size: 18px;
- color: rgb(49, 49, 49);
+ color: rgb(56, 56, 56);
 }
 </style>

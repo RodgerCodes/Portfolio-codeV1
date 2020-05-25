@@ -2,7 +2,7 @@
 <div data-aos="fade-right" class="container items">
     <div class="content">
       <h1>Hello 😊,</h1>
-       <h1>My name is Rodger</h1>
+       <h1><span>I'm</span> Rodger</h1>
      <h2 style="font-size=30px">A fullstack web developer</h2>
      <router-link to="/#about" class="link"><a @click="closesidebar">About me</a></router-link>
     </div>
@@ -35,7 +35,7 @@ export default {
 
  .content {
      position: absolute;
-     top: 5.5rem;
+     top: 6rem;
      left: 10%;
      position: relative;
  }
@@ -43,6 +43,12 @@ export default {
 .content h1 {
     font-size: 30px ;
     letter-spacing: 2px;
+    margin: 2px 0;
+}
+
+.content span{
+    font-weight: 200;
+    margin-right:20px;
 }
 
  .link {
@@ -64,6 +70,7 @@ export default {
     font-weight: bold;
 }
 
+
 .content a:hover{
     transform: scale(1.1);
 }
@@ -73,7 +80,6 @@ export default {
     justify-content:space-between;
     height: 100vh;
    position: relative;
-   top: 50% !important;
 }
 
 .items img {

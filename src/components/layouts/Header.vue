@@ -2,7 +2,7 @@
   <v-card
     color="grey lighten-4"
     flat
-    height="200px"
+    height="180px"
     tile
     class="header-main"
     
@@ -35,7 +35,7 @@
          <router-link to="/" @click="closesidebar"><a @click="closesidebar">Home</a></router-link>
        <router-link to="/#about" ><a @click="closesidebar">About</a></router-link>
        <router-link to="/#project"><a @click="closesidebar">Projects</a></router-link>
-       <router-link to="/#contact" class="contact-btn"><a @click="closesidebar">Contact</a></router-link>
+       <router-link to="/#contact"><a @click="closesidebar">Contact</a></router-link>
        </div>
           </div> 
        
@@ -71,24 +71,32 @@
    margin: 0 20px;
    font-weight: bold;
    font-size: 22px !important;
-   color:#000;
+   color:rgb(48, 45, 45);
  }
 
  .side-nav {
    height: 100vh;
-   width: 0;
    position: fixed;
    top: 0;
    right: 0;
    background: #000;
-   opacity: 0.9;
+   opacity: 1;
    overflow-x: hidden;
-   padding: 60px 0 0 0;
+   padding: 30px 0 0 0;
    transition: 0.5s;
    z-index: 100 !important;
-   
+   box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);;
  }
 
+.side-nav ::before{
+  content: '';
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #000;
+  z-index: 100;
+}
  .side-nav a {
    padding: 5px 10px 5px 30px;
    text-decoration: none;
@@ -102,7 +110,7 @@
   .side-nav .btn-close {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 5px;
     font-size: 36px;
     margin-right: 50px;
   }

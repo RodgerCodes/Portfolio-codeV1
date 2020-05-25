@@ -34,6 +34,10 @@ export default {
     position: relative;
 }
 
+#contact h1 {
+    color: #4d4d4d ;
+}
+
 .info {
     position: absolute;
     top: 40%;

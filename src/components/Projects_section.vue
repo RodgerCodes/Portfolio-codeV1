@@ -74,7 +74,7 @@ export default {
  .project h1 {
      text-align: center;
      margin: 0 0 20px 0;
-     color: #000;
+     color: rgb(77, 76, 76);
  }
 
  
