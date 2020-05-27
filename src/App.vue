@@ -27,13 +27,13 @@ html {
 }
 body {
   overflow: hidden;
-  background: rgb(255, 255, 255);
+  background:#0A0B5B;
 }
 #app {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #4d4d4d;
+  color: #fff;
 }
 
 a{

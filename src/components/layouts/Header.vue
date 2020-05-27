@@ -1,12 +1,12 @@
 <template>
   <v-card
-    color="grey lighten-4"
+    color="#0A0B5B lighten-4"
     flat
     height="200px"
     tile
     class="header-main"
   >
-    <v-toolbar class="header" >
+    <v-toolbar class="header" color="#0A0B5B">
       <v-img
        src="../../assets/cpy.png"
        height="40"

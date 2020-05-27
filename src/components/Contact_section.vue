@@ -38,6 +38,10 @@ export default {
     margin: 20px 0;
 }
 
+.contact-info{
+    background: #080936;
+}
+
 .contact-info .info h2{
     font-size: 1.1em;
 }
@@ -58,7 +62,7 @@ export default {
 }
 
 .contact-info .info input[type="text"], .contact-info .info input[type="email"]{
-   border: 1px solid #000;
+   border: 1px solid #fff;
    border-radius: 10px;
    width: 100%;
    height:40px;
@@ -68,14 +72,14 @@ export default {
 }
 
 .contact-info .info label{
-    color: rgb(31, 31, 31);
+    color: #fff;
     margin-top: 6px;
     font-weight: bold;
 }
 
 .contact-info .info textarea{
    width: 100%;
-   border: 1px solid #000;
+   border: 1px solid #fff;
    height: 100px;
    border-radius: 10px;
 }
