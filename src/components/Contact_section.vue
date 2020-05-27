@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-left" id="contact" class="container contact-info">
+    <div  id="contact" class="container contact-info">
         <h1>Contact info</h1>
         <div class="info">
         <div>
@@ -8,16 +8,19 @@
            <p>+265 992 424 839</p>
         </div>  
         <div>
-          <h2>Email address</h2>
-          <div class="emails">  
-        <a href="mailto:rkumwanje@gmail.com">rkumwanje@gmail.com</a>
-        <a href="mailto:rkumwanje@hec.ac.mw">rkumwanje@hec.ac.mw</a>
-         </div>
-        </div>
-        <div>
          <h3>Location</h3>
          <p>Likuni, Lilongwe, Malawi, Africa</p>
         </div>
+          <form name="contact" netlify>
+              <h3>Get in Touch</h3>
+              <label for="">Name</label>
+              <input type="text" name="name" placeholder="your name">
+              <label for="">Email</label>
+              <input type="email" name="email" id="" placeholder="your email">
+              <label for="">Message</label>
+              <textarea name="message" placeholder="Your message"></textarea>
+              <input type="submit" value="Send Flare">
+          </form>
         </div>
     </div>
 </template>
@@ -29,51 +32,64 @@ export default {
 </script>
 
 <style>
-.contact-info {
-    height: 100vh;
-    position: relative;
+.contact-info h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
 }
 
-#contact h1 {
-    color: #4d4d4d ;
+.contact-info .info h2{
+    font-size: 1.1em;
 }
 
-.info {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+.contact-info .info > div{
+    text-align: center;
 }
 
-.info > div  {
-  margin: 50px 0;
-} 
-
-.info > div h2 {
-    font-size: 30px;
-    margin: 10px 0;
-    
-}
-
-.info .emails {
+.contact-info .info form {
     display: flex;
     flex-direction: column;
+    margin-top:10px;
 }
 
-.info .emails a{
-    text-decoration: none;
-    color: #000;
-    opacity: 0.7;
-    margin: 7px 0;
-}
-
-.info .emails a:hover {
-    opacity: 1;
-}
-
-.contact-info h1{
+.contact-info .info form h3{
     text-align: center;
-    margin:20px 0;
+    margin: 20px 0;
 }
 
+.contact-info .info input[type="text"], .contact-info .info input[type="email"]{
+   border: 1px solid #000;
+   border-radius: 10px;
+   width: 100%;
+   height:40px;
+   max-width: 400px;
+   margin: 2px auto;
+   font-size: 0.3;
+}
+
+.contact-info .info label{
+    color: rgb(31, 31, 31);
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.contact-info .info textarea{
+   width: 100%;
+   border: 1px solid #000;
+   height: 100px;
+   border-radius: 10px;
+}
+.contact-info .info form input[type="submit"]{
+    color: #fff;
+    background: rgb(4, 128, 211);
+    padding: 10px 0px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.contact-info .info div{
+    margin: 20px 0;
+}
 </style>

@@ -2,10 +2,9 @@
   <v-card
     color="grey lighten-4"
     flat
-    height="180px"
+    height="200px"
     tile
     class="header-main"
-    
   >
     <v-toolbar class="header" >
       <v-img
@@ -62,7 +61,8 @@
   padding: 10px 10px 5px 30px;
 }
  .links {
-    display: flex;
+    display: none;
+
  }
 
  .links a {
@@ -88,15 +88,6 @@
    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);;
  }
 
-.side-nav ::before{
-  content: '';
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: #000;
-  z-index: 100;
-}
  .side-nav a {
    padding: 5px 10px 5px 30px;
    text-decoration: none;
@@ -115,12 +106,11 @@
     margin-right: 50px;
   }
 
-  .svg{
-    display: none;
-  }
-
   .header-main {
     width: 100vw !important;
   }
 
+.svg{
+  display: none;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
-    <div   id="about" class="container about" data-aos="fade-left">
+    <div   id="about" class="container about" >
        <h1>About Me</h1>
-       <div class="about-info">
+       <div class="about-info grid">
        <img :src="image"  alt="Rodger Photo" width="250rem">
           <div class="extra-info">
              <h2>My Name is Rodger Kumwanje and i am a 19 year old Full stack developer with 1 year experience building web apps with Technologies like Nodejs, Vuejs ,Html5, CSS3 and Vanilla JavaScript, MongoDB, MySQL and Postgres. With the techstack you can only guess it, my favourite Programming language is JavaScript.I am also a Student at the Malawi University of Science and Technology <a href="">Must</a> Pursuing a degree in Meteorology and Climate Science</h2>
@@ -28,35 +28,24 @@ export default {
 
 <style>
 
-.about {
-    height: 100vh !important;
-    position: relative;
-    
-}
-
-.about h1 {
-   text-align: center;
-   margin: 0 0 20px 0;
-}
-
-.about-info {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fill, 350px);
-    grid-gap:10px;
+.about h1{
+    font-size: 1.3em;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .about-info img {
-    margin: 60px 10px !important; 
-    border:2px yellow solid;
-    border-radius: 50%;
-} 
-   
+    padding: 10px 30px;
+    grid-column: 2/7;
+}
 
-.about-info .extra-info h2{
-  position: absolute;
-  top: 25%;
- font-size: 18px;
- color: rgb(56, 56, 56);
+.about-info .extra-info{
+    grid-row: 2;
+    grid-column: 1/13;
+    margin:20px 10px;
+}
+
+.about-info .extra-info h2 {
+    font-size:1em;
 }
 </style>

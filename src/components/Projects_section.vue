@@ -1,24 +1,14 @@
 <template>
-    <div data-aos="fade-right" id="project" class="container project">
+    <div  id="project" class="container project ">
         <h1>My Projects</h1>
-        <div class=" projects">
-          <div class="project-1 card">
-            <h2>Covidfy</h2>
-           <img src="../assets/covid.png" alt="Project image">
-           <div class="project-info">
-             <p>A mobile app for covid-19😷</p>
-             <div>
-                <a target="_blank" href="https://github.com/RodgerCodes/Covidfy"><i class="fab fa-github" color="#000"></i>Code</a>
-             </div>
-           </div>
-        </div> 
+        <div class=" projects grid"> 
         <div class="project-2">
           <h2>Facebook clone</h2>
            <img :src="facebook" alt="Project image">
            <div class="project-info">
              <p>Facebook clone built with Node, Vue and MongoDB</p>
              <div>
-                <router-link to=""><i class="fab fa-github" color="#000"></i>Code</router-link>
+                <a href=""><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -35,7 +25,7 @@
         </div>
            <div class="project-4 card">
           <h2>Thoughts 101</h2>
-           <img src="../assets/images.png" alt="Project image">
+           <img :src="Thoughts" alt="Project image">
            <div class="project-info">
              <p>A Fullstack web app</p>
              <div>
@@ -54,40 +44,41 @@ export default {
     name:"Projectsection",
     data(){
       return{
-        facebook:require('../assets/fb_icon.png')
+        facebook:require('../assets/facebook.png'),
+        Thoughts:require('../assets/thoughts.png')
       }
     }
 }
 </script>
 
 <style>
- .project {
-     height: 100vh;
- }
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
-    justify-content: space-evenly;
-    cursor: pointer;
-    
-}
+ 
  .project h1 {
-     text-align: center;
-     margin: 0 0 20px 0;
-     color: rgb(77, 76, 76);
+   font-size: 1.3em;
+   text-align: center;
  }
 
+ .projects {
+   padding: 30px 0px;
+ }
+
+.project-2{
+  grid-row: 1;
+}
+
+.project-3{
+  grid-row: 2;
+}
+
+.project-4{
+   grid-row: 3;
+}
  
- .project-1, .project-2, .project-3, .project-4{
-     width: 400px;
-     height: 260px;
-     background: #fff;
-     /* box-shadow: 2px 2px 10px #1a191993, 2px 2px 10px #1a191993; */
-     box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);
-     position: relative;
+ .project-2, .project-3, .project-4{
+     width: 300px;
+     height: 290px;
+     border-bottom: 1px solid #000;
      margin: 15px 0;
-     align-content: center;
-     left: 2rem;
      transition: all 0.5s ease;
  }
 
@@ -101,40 +92,28 @@ export default {
      margin: 10px 0;
  }
 
-.project-1 img {
-   width: 128px;
-   height: 128px;
-    margin: 10px 130px;
- }
 
  .project-3 img  {
     width: 128px;
    height: 128px;
-   margin: 5px 130px;
+   /* margin: 5px 100px; */
  }
 
  .project-4 img {
-   width:128px;
-   height: 128px;
-   margin: 10px 130px;
+   width:100%;
+   margin:10px 0;
  }
 
  .project-2 img {
-   width: 128px;
-   height: 128px;
-   margin: 10px 130px;
+   width: 100%;
+   border: none;
+   margin: 10px 0;
  }
 
  .project-info p {
      text-align: center;
      font-weight: bold;
  }
-
-  .project-info > div {
-   position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
-  }
 
  .project-info a {
      text-decoration: none;
