@@ -44,4 +44,19 @@ a{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
+
+@media Screen and (min-width:620px){
+  .items img{
+    grid-column: 10/11;
+    width:100% ;
+  }
+}
+
+@media Screen and (min-width: 960px){
+
+}
+
+@media Screen and (min-width: 1200px){
+
+}
 </style>

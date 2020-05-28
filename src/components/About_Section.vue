@@ -47,5 +47,16 @@ export default {
 
 .about-info .extra-info h2 {
     font-size:1em;
+    font-weight: normal;
+}
+
+@media Screen and (min-width:620px){
+    .about-info img{
+        grid-column: 4/7;
+    }
+
+    .about-info .extra-info{
+        padding: 0 5px;
+    }
 }
 </style>

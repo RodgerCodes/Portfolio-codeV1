@@ -1,8 +1,8 @@
 <template>
     <div  id="contact" class="container contact-info">
         <h1>Contact info</h1>
-        <div class="info">
-        <div>
+        <div class="basic">
+          <div>
            <h2>Phone Numbers</h2>
            <p>+265 880 122 611</p>
            <p>+265 992 424 839</p>
@@ -11,13 +11,13 @@
          <h3>Location</h3>
          <p>Likuni, Lilongwe, Malawi, Africa</p>
         </div>
+        </div>
+        <div class="info">
+        
           <form name="contact" netlify>
               <h3>Get in Touch</h3>
-              <label for="">Name</label>
               <input type="text" name="name" placeholder="your name">
-              <label for="">Email</label>
               <input type="email" name="email" id="" placeholder="your email">
-              <label for="">Message</label>
               <textarea name="message" placeholder="Your message"></textarea>
               <input type="submit" value="Send Flare">
           </form>
@@ -42,11 +42,11 @@ export default {
     background: #080936;
 }
 
-.contact-info .info h2{
+.contact-info .basic h2{
     font-size: 1.1em;
 }
 
-.contact-info .info > div{
+.contact-info .basic > div{
     text-align: center;
 }
 
@@ -67,22 +67,19 @@ export default {
    width: 100%;
    height:40px;
    max-width: 400px;
-   margin: 2px auto;
+   margin: 7px auto;
    font-size: 0.3;
 }
 
-.contact-info .info label{
-    color: #fff;
-    margin-top: 6px;
-    font-weight: bold;
-}
 
 .contact-info .info textarea{
-   width: 100%;
+   width: 70%;
    border: 1px solid #fff;
    height: 100px;
+   margin: 10px auto;
    border-radius: 10px;
 }
+
 .contact-info .info form input[type="submit"]{
     color: #fff;
     background: rgb(4, 128, 211);
@@ -93,7 +90,19 @@ export default {
     border-radius: 5px;
 }
 
-.contact-info .info div{
+.contact-info .basic div{
     margin: 20px 0;
+}
+
+@media Screen and (min-width:620px){
+   .contact-info .basic{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact-info .info form input[type="submit"]{
+        width: 20%;
+        margin: 5px auto;
+    }
 }
 </style>

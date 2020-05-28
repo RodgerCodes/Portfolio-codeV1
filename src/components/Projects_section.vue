@@ -129,4 +129,26 @@ export default {
      cursor: pointer;
      margin:0 10px ;
  }
+
+ @media Screen and (min-width:620px){
+   .project-2{
+      grid-column: 1/3;
+   }
+
+   .project-3{
+     grid-row: 1;
+     grid-column: 7/9;
+   }
+
+   .project-4{
+      grid-row: 3;
+      grid-column: 4/7;
+   }
+
+
+   .project-2, .project-3, .project-4{
+     width: 280px;
+     height: 270px;
+   }
+ }
 </style>

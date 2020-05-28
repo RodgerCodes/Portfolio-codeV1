@@ -1,8 +1,8 @@
 <template>
   <v-card
-    color="#0A0B5B lighten-4"
+    color="#0A0B5B "
     flat
-    height="200px"
+    height="150px"
     tile
     class="header-main"
   >

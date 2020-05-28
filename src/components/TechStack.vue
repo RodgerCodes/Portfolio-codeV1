@@ -58,7 +58,15 @@ export default {
     padding: 10px 20px;
 }
 
+.tech .stack div{
+    background:#07083e ;
+    padding: 30px 10px;   
+}
 
+.tech .stack > div{
+    display: flex;
+    justify-content: center;
+}
 
 .tech .stack > div img{
     width: 50%;
@@ -67,5 +75,25 @@ export default {
 .tech .stack > div h4{
     font-size: 0.8em;
     padding: 0 10px;
+    margin: 15px 5px;
+    text-align: center;
+}
+
+@media Screen and (min-width:620px ){
+  .tech .stack > div img{
+      width: 30%;
+  }
+
+  .tech .stack{
+      margin:0 10%;
+  }
+
+  .tech .stack  div{
+      margin: 10px 0;
+  }
+
+  .tech{
+      margin-bottom: 30px;
+  }
 }
 </style>

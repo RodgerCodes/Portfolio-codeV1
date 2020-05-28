@@ -71,10 +71,29 @@ export default {
 }
 
 
-.link:hover{
+.contact a:hover{
     transform: scale(1.2);
 }
 
+@media Screen and (min-width:620px){
+  .items img{
+    grid-column: 10/6;
+    width:1000%;
+  }
+
+  body{
+      font-size: 17px;
+  }
+
+  .content{
+      grid-column: 2/8;
+      margin-top: 100px;
+  }
+
+  .items{
+      height: 75vh;
+  }
+}
 
 
  
