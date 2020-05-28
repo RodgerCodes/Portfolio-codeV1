@@ -37,6 +37,7 @@ export default {
 
 .content{
     grid-column: 1/11;
+    font-family: 'Rubik Regular';
 }
 
 .content h1{
@@ -60,6 +61,7 @@ export default {
     grid-column: 11/13;
     width: 600%;
     grid-row: 1;
+    max-width: 700px;
 }
 
 .link {
@@ -71,7 +73,7 @@ export default {
 }
 
 
-.contact a:hover{
+.link:hover{
     transform: scale(1.2);
 }
 
@@ -99,6 +101,11 @@ export default {
      body{
          font-size: 20px;
      }
+     
+     .items img{
+       width: 520%;
+       margin-top: 50px;
+     }
 
      .content{
          margin-top: 120px;
@@ -106,5 +113,23 @@ export default {
 }
 
  
+@media Screen and (min-width: 1200px){
+
+  .content h1{
+     letter-spacing: 2px;
+  }
+
+  .content{
+      grid-column: 2/7;
+  }
+
+  .content h2{
+      letter-spacing: 2px;
+  }
+
+  .items img{
+      grid-column: 6/9;
+  }
+}
 
 </style>

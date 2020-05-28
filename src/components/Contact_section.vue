@@ -36,10 +36,17 @@ export default {
     font-size: 1.5em;
     text-align: center;
     margin: 20px 0;
+    padding: 15px 0;
 }
 
 .contact-info{
     background: #080936;
+    font-family: 'Rubik Regular';
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('../assets/fonts/Rubik-Regular.ttf');
 }
 
 .contact-info .basic h2{
@@ -78,6 +85,7 @@ export default {
    height: 100px;
    margin: 10px auto;
    border-radius: 10px;
+   max-width: 400px;
 }
 
 .contact-info .info form input[type="submit"]{
@@ -109,7 +117,7 @@ export default {
 
 @media Screen and (min-width:960px){
     .contact-info .info textarea{
-          width: 45%;
+          width: 40%;
           font-size: 0.8em;
     }
 

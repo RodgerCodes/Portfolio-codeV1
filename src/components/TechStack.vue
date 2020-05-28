@@ -96,4 +96,14 @@ export default {
       margin-bottom: 30px;
   }
 }
+
+@media Screen and (min-width:1200px){
+    .tech .stack{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .tech .stack > div img{
+        width: 50%;
+    }
+}
 </style>

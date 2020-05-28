@@ -28,7 +28,15 @@ html {
 body {
   overflow: hidden;
   background:#0A0B5B;
+  font-family: 'Rubik Regular';
+
 }
+
+@font-face{
+    font-family: 'Rubik Regular';
+    src: url('./assets/fonts/Rubik-Regular.ttf');
+}
+
 #app {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,5 +1,5 @@
-<template>
-    <div   id="about" class="container about" >
+<template >
+    <div  id="about" class="container about" >
        <h1>About Me</h1>
        <div class="about-info grid">
        <img :src="image"  alt="Rodger Photo" width="250rem">
@@ -37,6 +37,7 @@ export default {
 .about-info img {
     padding: 10px 30px;
     grid-column: 2/7;
+    max-width: 300px;
 }
 
 .about-info .extra-info{
@@ -48,6 +49,13 @@ export default {
 .about-info .extra-info h2 {
     font-size:1em;
     font-weight: normal;
+    font-family: 'Rubik Regular';
+}
+
+.about-info .extra-info h2 a {
+    color: rgb(13, 158, 255);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media Screen and (min-width:620px){
@@ -70,5 +78,9 @@ export default {
          grid-row: 1;
          grid-column: 5/19;
      }
+}
+
+@media Screen and (min-width:1200px){
+
 }
 </style>

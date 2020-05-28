@@ -57,12 +57,14 @@ export default {
   background: url('../assets/square_bg.png');
   background-size: cover;
   background-position: bottom;
+  font-family: 'Rubik Regular';
 }
  
  .project h1 {
    font-size: 1.3em;
    text-align: center;
    margin-top: 10px;
+   padding: 15px 0;
  }
 
  .projects {
@@ -98,13 +100,19 @@ export default {
  .project-1 h2,  .project-2 h2,.project-3 h2, .project-4 h2 {
      text-align: center;
      margin: 10px 0;
+      font-size: 1.3em;
+ }
+
+ .project-2 .project-info a , .project-3 .project-info a, .project-4 .project-info a{
+   margin:10px 15px;
+   font-size: 0.9em;
  }
 
 
  .project-3 img  {
     width: 128px;
    height: 128px;
-   /* margin: 5px 100px; */
+   margin: 10px 0;
  }
 
  .project-4 img {
@@ -120,7 +128,7 @@ export default {
 
  .project-info p {
      text-align: center;
-     font-weight: bold;
+     font-size: 0.9em;
  }
 
  .project-info a {
@@ -168,8 +176,26 @@ export default {
 
    .project-4{
      grid-column:5/8 ;
+   }   
+ }
+
+ @media Screen and (min-width:1200px){
+   .project-4{
+      grid-row: 1;
    }
 
-   
+   .project-2{
+     grid-column: 2/4;
+   }
+
+   .project-4{
+     grid-column: 6/8;
+   }
+
+   .project-3{
+     grid-column: 10/12;
+   }
  }
+
+
 </style>
