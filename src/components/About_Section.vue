@@ -59,4 +59,16 @@ export default {
         padding: 0 5px;
     }
 }
+
+@media Screen and (min-width:960px){
+    .about-info img{
+        grid-row: 1;
+        grid-column: 1/4;
+        width: 130%;
+    }
+     .about-info .extra-info{
+         grid-row: 1;
+         grid-column: 5/19;
+     }
+}
 </style>

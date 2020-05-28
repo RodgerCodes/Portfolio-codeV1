@@ -1,5 +1,5 @@
 <template>
-    <div  id="project" class="container project ">
+    <div  id="project" class=" project ">
         <h1>My Projects</h1>
         <div class=" projects grid"> 
         <div class="project-2">
@@ -150,5 +150,26 @@ export default {
      width: 280px;
      height: 270px;
    }
+ }
+
+ @media Screen and (min-width:960px){
+   .project-2, .project-3, .project-4{
+     width: 300px;
+     height: 300px;
+   }
+
+   .project-2{
+      grid-column:2/6;
+   }
+
+   .project-3{
+     grid-column: 8/12;
+   }
+
+   .project-4{
+     grid-column:5/8 ;
+   }
+
+   
  }
 </style>

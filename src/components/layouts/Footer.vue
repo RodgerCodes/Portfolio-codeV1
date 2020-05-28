@@ -1,5 +1,5 @@
 <template>
-  <div class="container footer" >
+  <div class=" footer" >
      <div class="icons">
        <a href="https://www.instagram.com/rodger.codes/" target="_blank"><i class="fab fa-instagram fa-2x" style="color:#fff"></i></a>
        <a href="mailto:rkumwanje@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x" style="color:#fff"></i></a>

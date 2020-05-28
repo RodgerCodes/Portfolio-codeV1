@@ -62,7 +62,7 @@
 }
  .links {
     display: none;
-
+   
  }
 
  .links a {
@@ -71,7 +71,7 @@
    margin: 0 20px;
    font-weight: bold;
    font-size: 22px !important;
-   color:rgb(48, 45, 45);
+   color: #fff;;
  }
 
  .side-nav {
@@ -110,7 +110,15 @@
     width: 100vw !important;
   }
 
-.svg{
-  display: none;
-}
+ @media Screen and (min-width:960px){
+   .svg{
+      display: none;
+   }
+
+   .links{
+     display: inline-flex;
+   }
+ }
+
+
 </style>

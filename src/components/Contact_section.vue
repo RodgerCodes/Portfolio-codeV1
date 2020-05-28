@@ -1,5 +1,5 @@
 <template>
-    <div  id="contact" class="container contact-info">
+    <div  id="contact" class=" contact-info">
         <h1>Contact info</h1>
         <div class="basic">
           <div>
@@ -104,5 +104,17 @@ export default {
         width: 20%;
         margin: 5px auto;
     }
+}
+
+
+@media Screen and (min-width:960px){
+    .contact-info .info textarea{
+          width: 45%;
+          font-size: 0.8em;
+    }
+
+    .contact-info .info input[type="text"], .contact-info .info input[type="email"]{
+      font-size: 0.8em;
+    } 
 }
 </style>

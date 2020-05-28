@@ -52,9 +52,6 @@ a{
   }
 }
 
-@media Screen and (min-width: 960px){
-
-}
 
 @media Screen and (min-width: 1200px){
 

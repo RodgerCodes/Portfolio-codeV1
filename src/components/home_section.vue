@@ -1,5 +1,5 @@
 <template>
-<div class="container items grid" >
+<div class=" items grid" >
     <div class="content ">
       <h1>Hello 😊,</h1>
        <h1><span>I'm</span> Rodger</h1>
@@ -95,6 +95,15 @@ export default {
   }
 }
 
+@media Screen and (min-width: 960px){
+     body{
+         font-size: 20px;
+     }
+
+     .content{
+         margin-top: 120px;
+     }
+}
 
  
 
