@@ -138,6 +138,13 @@ export default {
      margin:0 10px ;
  }
 
+ @media Screen and (min-width:500px){
+   .project-2, .project-3, .project-4{
+      grid-column: 6;
+   }
+
+ }
+
  @media Screen and (min-width:620px){
    .project-2{
       grid-column: 1/3;

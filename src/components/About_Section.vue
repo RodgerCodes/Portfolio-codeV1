@@ -58,6 +58,12 @@ export default {
     cursor: pointer;
 }
 
+@media Screen and (min-width:500px){
+     .about-info img{
+         grid-column: 4/6;
+     }
+}
+
 @media Screen and (min-width:620px){
     .about-info img{
         grid-column: 4/7;

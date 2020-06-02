@@ -57,11 +57,8 @@ export default {
     position: relative;
 }
 
-.items img {
-    grid-column: 11/13;
-    width: 600%;
-    grid-row: 1;
-    max-width: 700px;
+.items img{
+    display: none;
 }
 
 .link {
@@ -77,11 +74,35 @@ export default {
     transform: scale(1.2);
 }
 
+@media Screen and (min-width:500px){
+   .items img{
+       display: none;
+       grid-row: 2;
+   }
+
+   .content{
+       grid-column: 3/10;
+       margin-top: 55px;
+   }
+
+   .content h2{
+     font-size: 1.6em;
+   }
+
+   .content h1{
+     font-size: 1.9em;
+   }
+
+}
+
 @media Screen and (min-width:620px){
-  .items img{
+  .items img {
+      display: block;
     grid-column: 10/6;
-    width:1000%;
-  }
+    width: 1000%;
+    grid-row: 1;
+    max-width: 700px;
+}
 
   body{
       font-size: 17px;

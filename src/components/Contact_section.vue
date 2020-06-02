@@ -35,7 +35,6 @@ export default {
 .contact-info h1{
     font-size: 1.5em;
     text-align: center;
-    margin: 20px 0;
     padding: 15px 0;
 }
 
@@ -95,11 +94,19 @@ export default {
     font-weight: bold;
     margin-top: 20px;
     width: 40%;
+    max-width:100px;
     border-radius: 5px;
 }
 
 .contact-info .basic div{
     margin: 20px 0;
+}
+
+@media Screen and (min-width:500px){
+.contact-info .info form input[type="submit"]{
+
+    margin: 5px auto;
+}
 }
 
 @media Screen and (min-width:620px){
