@@ -81,7 +81,7 @@ export default {
    }
 
    .content{
-       grid-column: 3/10;
+       grid-column: 2/13;
        margin-top: 55px;
    }
 

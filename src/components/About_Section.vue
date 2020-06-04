@@ -74,6 +74,12 @@ export default {
     }
 }
 
+@media Screen and (min-width:760px){
+    .about-info img{
+        grid-column: 5/8;
+    }
+}
+
 @media Screen and (min-width:960px){
     .about-info img{
         grid-row: 1;

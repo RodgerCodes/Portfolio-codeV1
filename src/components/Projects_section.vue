@@ -167,6 +167,16 @@ export default {
    }
  }
 
+ @media Screen and (min-width:760px){
+    .project-2{
+      grid-column:2/3 ;
+    }
+
+    .project-4{
+      grid-column: 2/7;
+    }
+ }
+
  @media Screen and (min-width:960px){
    .project-2, .project-3, .project-4{
      width: 300px;

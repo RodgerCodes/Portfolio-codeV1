@@ -8,9 +8,9 @@
   >
     <v-toolbar class="header" color="#0A0B5B">
       <v-img
-       src="../../assets/cpy.png"
-       height="40"
-       max-width="75"
+       src="../../assets/logo.png"
+       height="50"
+       max-width="155"
       to="/"
       ><router-link to="/"></router-link></v-img>
      
@@ -79,14 +79,13 @@
    position: fixed;
    top: 0;
    right: 0;
-   background: #000;
+   background: rgb(21, 21, 44);
    opacity: 1;
    overflow-x: hidden;
    padding: 30px 0 0 0;
    transition: 0.5s;
-   z-index: 100 !important;
-   box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);;
  }
+
 
  .side-nav a {
    padding: 5px 10px 5px 30px;
