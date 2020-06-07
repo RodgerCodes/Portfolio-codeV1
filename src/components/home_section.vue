@@ -36,12 +36,13 @@ export default {
 
 
 .content{
-    grid-column: 1/11;
+    grid-column: 1/13;
     font-family: 'Rubik Regular';
+    margin-top:55px;
 }
 
 .content h1{
-    font-size: 1.6em;
+    font-size: 1.7em;
 }
 .content span{
     color:rgb(4, 128, 211) ;
@@ -49,7 +50,7 @@ export default {
 
 .content h2{
     margin-bottom: 20px;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .items {

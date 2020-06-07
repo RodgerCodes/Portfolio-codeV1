@@ -22,13 +22,13 @@
        <router-link to="/#contact" >Contact</router-link>
         </div>   
         <div class="svg">
-          <a href="#" @click="opensidebar">
-           <svg width="30" height="30">
+          <!-- <a href="#" @click="opensidebar"> -->
+          <svg width="30" height="30" @click="opensidebar">
          <path d="M0,5 25,5" stroke="#fff" stroke-width="4" />
          <path d="M0,14 20,14" stroke="#fff" stroke-width="4" />
          <path d="M0,23 40,23" stroke="#fff" stroke-width="4" />
-       </svg>
-       </a>
+         </svg>
+       <!-- </a> -->
        <div id="side-menu" class="side-nav">
          <a href="#" class="btn-close" @click="closesidebar">&times;</a>
          <router-link to="/" @click="closesidebar"><a @click="closesidebar">Home</a></router-link>
@@ -46,7 +46,7 @@
     name: 'Header',
     methods:{
       opensidebar(){
-        document.getElementById('side-menu').style.width = '180px';
+        document.getElementById('side-menu').style.width = '170px';
         document.querySelector('.side-nav').style.zIndex = '100 !important';
       },
       closesidebar() {
@@ -104,7 +104,9 @@
     font-size: 36px;
     margin-right: 50px;
   }
-
+.svg{
+  cursor: pointer;
+}
   .header-main {
     width: 100vw !important;
   }

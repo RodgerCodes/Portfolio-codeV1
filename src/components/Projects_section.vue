@@ -19,7 +19,7 @@
              <p>A web app for information about the latest movies and series</p>
              <div>
                 <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-chrome" color="#000"></i>view</a>
-                <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-github" color="#000"></i>Code</a>
+                <a target="_blank" href=""><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
