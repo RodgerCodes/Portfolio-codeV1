@@ -77,6 +77,7 @@ export default {
     padding: 0 10px;
     margin: 15px 5px;
     text-align: center;
+    color: #fff;
 }
 
 @media Screen and (min-width:620px ){

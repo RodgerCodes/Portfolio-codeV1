@@ -1,10 +1,10 @@
 <template >
-    <div  id="about" class="container about" >
+    <div data-aos="fade-up"  id="about"  class="container about" >
        <h1>About Me</h1>
        <div class="about-info grid">
        <img :src="image"  alt="Rodger Photo" width="250rem">
           <div class="extra-info">
-             <h2>My Name is Rodger Kumwanje and i am a 19 year old Full stack developer with 1 year experience building web apps with Technologies like Nodejs, Vuejs ,Html5, CSS3 and Vanilla JavaScript, MongoDB, MySQL and Postgres. With the techstack you can only guess it, my favourite Programming language is JavaScript.I am also a Student at the Malawi University of Science and Technology <a href="">Must</a> Pursuing a degree in Meteorology and Climate Science</h2>
+             <h2>My Name is Rodger Kumwanje and i am a 19 year old Full stack developer with 1 year experience building web apps with Technologies like Nodejs, Vuejs ,Html5, CSS3 and Vanilla JavaScript, MongoDB, MySQL and Postgres. With the techstack you can only guess it, my favourite Programming language is JavaScript.I am also a Student at the Malawi University of Science and Technology <a target="_blank" rel="noreferrer" href="https://www.must.ac.mw/">Must</a> Pursuing a degree in Meteorology and Climate Science</h2>
           </div>
        </div>
        <TechStack/>

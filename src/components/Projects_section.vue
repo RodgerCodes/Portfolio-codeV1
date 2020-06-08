@@ -1,5 +1,5 @@
 <template>
-    <div  id="project" class=" project ">
+    <div data-aos="fade-up"  id="project" class=" project ">
         <h1>My Projects</h1>
         <div class=" projects grid"> 
         <div class="project-2">
@@ -8,18 +8,18 @@
            <div class="project-info">
              <p>Facebook clone built with Node, Vue and MongoDB</p>
              <div>
-                <a href=""><i class="fab fa-github" color="#000"></i>Code</a>
+                <a  rel="noreferrer" href="https://github.com/RodgerCodes/Facebookclone" target="_blank"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
         <div class="project-3 card">
-          <h2>Movie Library</h2>
+          <h2>TodoList App</h2>
            <img src="../assets/unnamed.jpg" alt="Project image">
            <div class="project-info">
-             <p>A web app for information about the latest movies and series</p>
+             <p>A todoList app built with node and mongoDb</p>
              <div>
-                <a target="_blank" href="https://github.com/RodgerCodes/covd-19-tracker-"><i class="fab fa-chrome" color="#000"></i>view</a>
-                <a target="_blank" href=""><i class="fab fa-github" color="#000"></i>Code</a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/RodgerCodes/Todo-ist"><i class="fab fa-chrome" color="#000"></i>view</a>
+                <a target="_blank"  rel="noreferrer" href=""><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -29,8 +29,8 @@
            <div class="project-info">
              <p>A Fullstack web app</p>
              <div>
-               <a target="_blank" href="https://stormy-springs-87821.herokuapp.com/"><i class="fab fa-chrome" color="#000"></i>Visit</a>
-                <a target="_blank" href="https://github.com/RodgerCodes/Thoughts-101"><i class="fab fa-github" color="#000"></i>Code</a>
+               <a target="_blank"  rel="noreferrer" href="https://stormy-springs-87821.herokuapp.com/"><i class="fab fa-chrome" color="#000"></i>Visit</a>
+                <a target="_blank"  rel="noreferrer" href="https://github.com/RodgerCodes/Thoughts-101"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -90,6 +90,7 @@ export default {
      border-bottom: 1px solid #fff;
      margin: 15px 0;
      transition: all 0.5s ease;
+     grid-column: 6;
  }
 
 .project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover {

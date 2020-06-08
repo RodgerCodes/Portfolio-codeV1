@@ -1,5 +1,5 @@
 <template>
-    <div  id="contact" class=" contact-info">
+    <div data-aos="fade-up"  id="contact" class=" contact-info">
         <h1>Contact info</h1>
         <div class="basic">
           <div>
@@ -16,9 +16,9 @@
         
           <form name="contact" netlify>
               <h3>Get in Touch</h3>
-              <input type="text" name="name" placeholder="your name">
-              <input type="email" name="email" id="" placeholder="your email">
-              <textarea name="message" placeholder="Your message"></textarea>
+              <input type="text" name="name" placeholder="your name" title="name">
+              <input type="email" name="email"  placeholder="your email" title="email">
+              <textarea name="message" placeholder="Your message" title="message"></textarea>
               <input type="submit" value="Send Flare">
           </form>
         </div>
@@ -79,7 +79,7 @@ export default {
 
 
 .contact-info .info textarea{
-   width: 70%;
+   width: 100%;
    border: 1px solid #fff;
    height: 100px;
    margin: 10px auto;
@@ -92,7 +92,8 @@ export default {
     background: rgb(4, 128, 211);
     padding: 10px 0px;
     font-weight: bold;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 20px auto;
     width: 40%;
     max-width:100px;
     border-radius: 5px;
