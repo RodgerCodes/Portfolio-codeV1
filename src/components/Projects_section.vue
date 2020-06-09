@@ -3,17 +3,18 @@
         <h1>My Projects</h1>
         <div class=" projects grid"> 
         <div class="project-2">
-          <h2>Facebook clone</h2>
+          <h2>FjMedia</h2>
            <img :src="facebook" alt="Project image">
            <div class="project-info">
-             <p>Facebook clone built with Node, Vue and MongoDB</p>
+             <p>A Photography Website</p>
              <div>
+               <a target="_blank"  rel="noreferrer" href="https://fjmedia.netlify.com"><i class="fab fa-chrome" color="#000"></i>Visit</a>
                 <a  rel="noreferrer" href="https://github.com/RodgerCodes/Facebookclone" target="_blank"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
         <div class="project-3 card">
-          <h2>TodoList App</h2>
+          <h2>Todo-ist</h2>
            <img src="../assets/unnamed.jpg" alt="Project image">
            <div class="project-info">
              <p>A todoList app built with node and mongoDb</p>
@@ -44,8 +45,8 @@ export default {
     name:"Projectsection",
     data(){
       return{
-        facebook:require('../assets/facebook.png'),
-        Thoughts:require('../assets/thoughts.png')
+        facebook:require('../assets/Screenshot (7).jpg'),
+        Thoughts:require('../assets/thoughts.jpg')
       }
     }
 }
@@ -215,5 +216,10 @@ export default {
    }
  }
 
+@media Screen and (min-width:2000px){
+  .project-2{
+    grid-column: 3/9;
+  }
+}
 
 </style>

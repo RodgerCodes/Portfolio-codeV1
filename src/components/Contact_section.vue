@@ -103,6 +103,8 @@ export default {
     margin: 20px 0;
 }
 
+
+
 @media Screen and (min-width:500px){
 .contact-info .info form input[type="submit"]{
 

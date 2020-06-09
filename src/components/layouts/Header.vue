@@ -46,7 +46,7 @@
     name: 'Header',
     methods:{
       opensidebar(){
-        document.getElementById('side-menu').style.width = '170px';
+        document.getElementById('side-menu').style.width = '160px';
         document.querySelector('.side-nav').style.zIndex = '100 !important';
       },
       closesidebar() {
@@ -84,6 +84,8 @@
    overflow-x: hidden;
    padding: 30px 0 0 0;
    transition: 0.5s;
+   width: 0;
+   z-index: 3;
  }
 
 
@@ -111,7 +113,17 @@
     width: 100vw !important;
   }
 
- @media Screen and (min-width:960px){
+  @media Screen and (min-width:620px){
+    .svg{
+      display: none;
+   }
+
+   .links{
+     display: inline-flex;
+   }
+  }
+
+ /* @media Screen and (min-width:960px){
    .svg{
       display: none;
    }
@@ -119,7 +131,7 @@
    .links{
      display: inline-flex;
    }
- }
+ } */
 
 
 </style>

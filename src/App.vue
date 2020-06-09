@@ -51,6 +51,7 @@ a{
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    z-index: 1;
 }
 
 @media Screen and (min-width:620px){

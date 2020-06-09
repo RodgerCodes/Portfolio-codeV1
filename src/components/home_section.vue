@@ -1,9 +1,9 @@
 <template>
 <div class=" items grid" >
     <div class="content ">
-      <h1>Hello 😊,</h1>
+      <h1>Hello there,</h1>
        <h1><span>I'm</span> Rodger</h1>
-     <h2 >A fullstack web <span>developer</span></h2>
+     <h2 >A fullstack web <span>developer</span>,</h2>
      <router-link to="/#about"  class="link">About me</router-link>
     </div>
    <div >
@@ -39,6 +39,7 @@ export default {
     grid-column: 1/13;
     font-family: 'Rubik Regular';
     margin-top:55px;
+    z-index: 1;
 }
 
 .content h1{
@@ -49,7 +50,7 @@ export default {
 }
 
 .content h2{
-    margin-bottom: 20px;
+    margin-bottom:20px;
     font-size: 1.4em;
 }
 
@@ -68,11 +69,22 @@ export default {
     padding: 10px 8px;
     font-weight: bold;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 
 .link:hover{
     transform: scale(1.2);
+}
+
+
+@media Screen and (min-width:420px){
+    body{
+        font-size: 18px;
+    }
+    .content{
+        grid-column: 2/11;
+    }
 }
 
 @media Screen and (min-width:500px){
@@ -103,6 +115,7 @@ export default {
     width: 1000%;
     grid-row: 1;
     max-width: 700px;
+    z-index: -1;
 }
 
   body{
@@ -117,6 +130,7 @@ export default {
   .items{
       height: 75vh;
   }
+
 }
 
 @media Screen and (min-width: 960px){
@@ -152,6 +166,24 @@ export default {
   .items img{
       grid-column: 6/9;
   }
+}
+
+@media Screen and (min-width:2000px){
+    body{
+        font-size: 29px;
+    }
+
+    .content{
+        grid-column: 3/8;
+    }
+
+    .items{
+        margin-top: 200px;
+    }
+
+    .items img{
+        width:1500%;
+    }
 }
 
 </style>
