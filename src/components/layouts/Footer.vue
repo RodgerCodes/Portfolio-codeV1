@@ -9,7 +9,7 @@
        <a target="_blank"  rel="noreferrer" href="https://github.com/RodgerCodes"><i class="fab fa-github fa-sm" style="color:#fff"></i></a>
      </div>
      <div>
-       
+       <p>Made with Love <i class="fas fa-heart" style="color:red"></i> with <i class="fab fa-vuejs" style="color:green"></i></p>
      </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   justify-content: center;
 }
 .icons a {
-    margin: 5px 10px;
+    margin: 10px 10px;
     cursor: pointer;
 }
 
@@ -38,6 +38,10 @@ export default {
 
 .footer{
   background: #14153D;
+}
+
+.footer p{
+  text-align: center;
 }
 
 </style>

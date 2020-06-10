@@ -15,12 +15,12 @@
         </div>
         <div class="project-3 card">
           <h2>Todo-ist</h2>
-           <img src="../assets/unnamed.jpg" alt="Project image">
+           <img :src="todo" alt="Project image">
            <div class="project-info">
              <p>A todoList app built with node and mongoDb</p>
              <div>
-                <a target="_blank" rel="noreferrer" href="https://github.com/RodgerCodes/Todo-ist"><i class="fab fa-chrome" color="#000"></i>view</a>
-                <a target="_blank"  rel="noreferrer" href=""><i class="fab fa-github" color="#000"></i>Code</a>
+                <a target="_blank" rel="noreferrer" href=""><i class="fab fa-chrome" color="#000"></i>view</a>
+                <a target="_blank"  rel="noreferrer" href="https://github.com/RodgerCodes/Todo-ist"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
         </div>
@@ -28,7 +28,7 @@
           <h2>Thoughts 101</h2>
            <img :src="Thoughts" alt="Project image">
            <div class="project-info">
-             <p>A Fullstack web app</p>
+             <p>A Fullstack web app built with node, Vue and MongoDB</p>
              <div>
                <a target="_blank"  rel="noreferrer" href="https://stormy-springs-87821.herokuapp.com/"><i class="fab fa-chrome" color="#000"></i>Visit</a>
                 <a target="_blank"  rel="noreferrer" href="https://github.com/RodgerCodes/Thoughts-101"><i class="fab fa-github" color="#000"></i>Code</a>
@@ -46,7 +46,8 @@ export default {
     data(){
       return{
         facebook:require('../assets/Screenshot (7).jpg'),
-        Thoughts:require('../assets/thoughts.jpg')
+        Thoughts:require('../assets/thoughts.jpg'),
+        todo:require('../assets/todoist.jpg')
       }
     }
 }
@@ -112,20 +113,16 @@ export default {
 
 
  .project-3 img  {
-    width: 128px;
-   height: 128px;
-   margin: 10px 0;
+   width: 100%;
  }
 
  .project-4 img {
    width:100%;
-   margin:10px 0;
  }
 
  .project-2 img {
    width: 100%;
    border: none;
-   margin: 10px 0;
  }
 
  .project-info p {
