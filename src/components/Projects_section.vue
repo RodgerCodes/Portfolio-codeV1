@@ -19,7 +19,7 @@
            <div class="project-info">
              <p>A todoList app built with node and mongoDb</p>
              <div>
-                <a target="_blank" rel="noreferrer" href=""><i class="fab fa-chrome" color="#000"></i>view</a>
+                <a target="_blank" rel="noreferrer" href="https://gentle-beach-32461.herokuapp.com/"><i class="fab fa-chrome" color="#000"></i>view</a>
                 <a target="_blank"  rel="noreferrer" href="https://github.com/RodgerCodes/Todo-ist"><i class="fab fa-github" color="#000"></i>Code</a>
              </div>
            </div>
