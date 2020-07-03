@@ -1,4 +1,8 @@
 # PORTFOLIO
+v0.2.0
+
+#Description
+This is the first version https://rodgercodes.netlify.com
 
 ## Project setup
 ```
